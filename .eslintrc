@@ -1,0 +1,13 @@
+{
+  "extends": "eslint-config-egg",
+  "rules": {
+    "jsdoc/check-tag-names": [
+      "error|warn",
+      {
+        "definedTags": [
+          "swagger"
+        ]
+      }
+    ]
+  }
+}
