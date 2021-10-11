@@ -24,7 +24,7 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-vm_message --port 13999",
+    "start": "export NODE_LOG_DIR=/tmp/eggjs && egg-scripts start --daemon --workers=1 --title=egg-server-vm_message --port 13999 --stderr=/tmp/eggjs/master-stderr.log --stdout=/tmp/eggjs/master-stdout.log",
     "stop": "egg-scripts stop --title=egg-server-vm_message --port 13999",
     "dev": "egg-bin dev --port 13999",
     "debug": "egg-bin debug --port 13999",
