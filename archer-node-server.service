@@ -6,6 +6,7 @@ Type=forking
 ExecStart=/home/archer/workspace/nodejs/vm_message/start.sh
 ExecStop=/home/archer/workspace/nodejs/vm_message/stop.sh
 WorkingDirectory=/home/archer/workspace/nodejs/vm_message
+Environment=PATH=/home/archer/.nvm/versions/node/v12.22.3/bin:/usr/bin:/usr/local/bin
 Restart=on-failure
 
 [Install]
