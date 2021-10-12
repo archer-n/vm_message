@@ -1,0 +1,12 @@
+[Unit]
+Description=Archer's Node Server
+
+[Service]
+Type=forking
+ExecStart=/home/archer/workspace/nodejs/vm_message/start.sh
+ExecStop=/home/archer/workspace/nodejs/vm_message/stop.sh
+WorkingDirectory=/home/archer/workspace/nodejs/vm_message
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
